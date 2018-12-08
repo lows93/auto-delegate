@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script For Auto-Delegate from validator kreios 
 while true
         do
                 STEAK=`gaiacli query account --chain-id=genki-1000 cosmos1qm7knjdln0ap9fpykdu5rcajm9cf2esvp8ey2v --trust-node | jq ".value.coins" | jq ".[0].amount" | bc`
